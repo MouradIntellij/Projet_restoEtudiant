@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - RestoEtudiant</title>
+    <link rel="stylesheet" href="./Styles/styleInscription.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<main class="inscription-section">
+    <h2>Inscription</h2>
+    <p class="msg"><strong>Créer un compte sur RestoEtudiant</strong></p>
+
+    <form id="inscription-form">
+        <div class="form-elt">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+        </div>
+
+        <div class="form-elt">
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+        </div>
+
+        <div class="form-elt">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required placeholder="nom@exemple.com">
+        </div>
+
+        <div class="form-elt">
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" required placeholder="Votre mot de passe">
+        </div>
+
+        <div class="form-elt">
+            <label for="confirm_password">Confirmer le mot de passe :</label>
+            <input type="password" id="confirm_password" name="confirm_password" required placeholder="Répétez votre mot de passe">
+        </div>
+
+        <div class="form-elt">
+            <label for="universite">Université :</label>
+            <input type="text" id="universite" name="universite">
+        </div>
+
+        <div class="form-elt">
+            <label for="annee_academique">Année académique :</label>
+            <input type="text" id="annee_academique" name="annee_academique">
+        </div>
+
+        <div class="form-elt">
+            <label for="carte_scolaire">Carte scolaire (numéro ou code) :</label>
+            <input type="text" id="carte_scolaire" name="carte_scolaire">
+        </div>
+
+        <div class="form-elt">
+            <label for="role">Rôle :</label>
+            <select id="role" name="role" required>
+                <option value="Etudiant" selected>Etudiant</option>
+                <option value="Restaurateur">Restaurateur</option>
+            </select>
+        </div>
+
+        <div class="btn-container">
+            <button type="submit" id="btn-inscription">
+                <span class="material-icons">person_add</span>
+                S'inscrire
+            </button>
+        </div>
+    </form>
+
+    <div id="message" style="color: red; margin-top: 10px;"></div>
+
+    <div class="form-links">
+        <a href="connexion.html">Déjà inscrit ? Se connecter</a>
+    </div>
+</main>
+
+<script type="module" src="./controller/inscription.js"></script>
+</body>
+</html>

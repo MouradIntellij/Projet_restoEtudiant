@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RestoEtudiant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+
+</head>
+
+<body>
+    <span class="material-icons menu-toggle">menu</span>
+    <main>
+
+        <!-- cotebar: leftbar-->
+        <div class="leftbar">
+            <!-- logo -->
+            <h1 class="logo">RestoEtudiant</h1>
+            <!-- liste des menus  -->
+            <div class="leftbar-menus">
+                <a href="index1.html"><span class="material-icons">storefront</span>Accueil</a>
+                <a href="Inscription.html">Inscriptions</a>
+            </div>
+            <!-- quitter -->
+            
+        </div>
+        <div class="main">
+            <!-- main navbar -->
+            <div class="main-navbar">
+                
+                <!-- Menu version mobile-->
+                <!-- recherche  -->
+                <div class="barre-recherche">
+                    <input type="search" id="search-input" placeholder="Que voulez-vous manger?" autocomplete="off">
+                
+                    <button class="recherche-btn" aria-label="Rechercher">
+                        <span class="material-icons">search</span>
+                    </button>
+                
+                    <button id="clear-search" aria-label="Effacer la recherche">
+                        <span class="material-icons">close</span>
+                    </button>
+                </div>
+
+                <!-- profile icon leftbar  -->
+                <div class="profile">
+                    <a href="panier.html" class="cart">
+                        <span class="material-icons">shopping_cart</span>
+                        <span class="cart-count">0</span>
+                    </a>
+                    <a href="connexion.html" class="user">
+                        <span class="material-icons">account_circle</span>
+                    </a>
+                </div>
+            </div>
+            <!-- main souligner -->
+            <div class="main-highlight">
+                <!-- titre de section-->
+                <div class="main-header">
+                    <h2 class="main-title">Recommandations</h2>
+                    <div class="main-fleche">
+                        <span class="material-icons back">arrow_back</span>
+                        <span class="material-icons next">arrow_forward</span>
+                    </div>
+                </div>
+                <!-- thighlight menu-->
+                <div class="highlight-wrapper">
+                    <div class="highlight-card">
+                        <img class="highlight-img" src="image/poulet braisé.jpg" alt="">
+                        <div class="hightlight-desc">
+                            <h4>Cuisine Ivoirienne</h4>
+                            <p>Dès $105/Semaine</p>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <img class="highlight-img" src="image/Maroc.jpg" alt="">
+                        <div class="hightlight-desc">
+                            <h4>Cuisine Marocainne</h4>
+                            <p>Dès $105/Semaine</p>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <img class="highlight-img" src="image/poulet braisé.jpg" alt="">
+                        <div class="hightlight-desc">
+                            <h4>Cuisine Sénégalaise</h4>
+                            <p>Dès $105/Semaine</p>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <img class="highlight-img" src="image/poulet braisé.jpg" alt="">
+                        <div class="hightlight-desc">
+                            <h4>Cuisine Algerienne</h4>
+                            <p>Dès $105/Semaine</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- main menu / order -->
+            <div class="main-menus">
+                <!--section filtre-->
+                <div class="main-filtrer">
+                    <div>
+                        <h2 class="titre">Formules</h2>
+                        <div class="main-arrow">
+                            <span class="material-icons back">arrow_back</span>
+                            <span class="material-icons next">arrow_forward</span>
+                        </div>
+                    </div>
+                    <div class="filtre-wrapper wrapper-filtre">
+                        <div class="flitre-card">
+                            <div class="filtre-icon">
+                                <span class="material-icons">restaurant</span>
+                            </div>
+                            <p><a href="#choix-" target="_blank">Toutes les Cuisines</a></p>
+                        </div>
+                        <div class="flitre-card">
+                            <div class="filtre-icon">
+                                <span class="material-icons">restaurant</span>
+                            </div>
+                            <p>Cuisine Algerienne</p>
+                        </div>
+                        <div class="flitre-card">
+                            <div class="filtre-icon">
+                                <span class="material-icons">restaurant</span>
+                            </div>
+                            <p>Cuisine Camerounnaise</p>
+                        </div>
+                        <div class="flitre-card">
+                            <div class="filtre-icon">
+                                <span class="material-icons">restaurant</span>
+                            </div>
+                            <p>Cuisine Ivoirienne</p>
+                        </div>
+                        <div class="flitre-card">
+                            <div class="filtre-icon">
+                                <span class="material-icons">restaurant</span>
+                            </div>
+                            <p>Cuisine Marocainne</p>
+                        </div>
+                        <div class="flitre-card">
+                            <div class="filtre-icon">
+                                <span class="material-icons">restaurant</span>
+                            </div>
+                            <p>Cuisine Mexicaine</p>
+                        </div>
+                        <div class="flitre-card">
+                            <div class="filtre-icon">
+                                <span class="material-icons">restaurant</span>
+                            </div>
+                            <p>Cuisine Ivoirienne</p>
+                        </div>
+                        <div class="flitre-card">
+                            <div class="filtre-icon">
+                                <span class="material-icons">restaurant</span>
+                            </div>
+                            <p>Cuisine Sénégalaise</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="divider">
+                <!-- Liste des formules des plats / abonnements-->
+                <div class="main-details">
+                    <h2 class="main-titre" id="choix-formules">Menu</h2>
+                    <p id="compteur-plats" style="margin: 10px 0; font-weight: bold; color: #00796b;">0 plats
+                        disponibles</p>
+
+                    <div class="details-wrapper">
+                        <!-- Card de chaque plat -->
+                    </div>
+                </div>
+
+                <div id="formules-public" class="formules-section">
+                    <h2>Nos Formules</h2>
+                    <div id="liste-formules-public">
+                        <!-- Formules injectées ici -->
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <h3>Menu </h3>
+                <ul class="footer-links">
+                    <li><a href="index1.html">Accueil</a></li>
+                    <li><a href="inscription.html">Inscription</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Liens utilies</h3>
+                <ul class="footer-links">
+                    <li><a href="#about">C'est quoi Resto Etudiant ?</a></li>
+                    <li><a href="#inscription">Comment ça fonctionne ?</a></li>
+                    <li><a href="#presentation">Histoire du Resto-Etudiant</a></li>
+                    <li><a href="#avantage">Les avantages du Resto</a></li>
+                    <li><a href="#Offres-abonnement">Nos offres d'abonnement</a></li>
+
+                </ul>
+            </div>
+
+            <div class="footer-content">
+                <h3>Contact</h3>
+                <p>
+                    +111 222-4568
+                    <br>plataflex@gmail.com
+                </p>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <p>RestoEtudiant&copy; / 2025 tous droits reserves.</p>
+        </div>
+    </footer>
+    <div class="overlay"></div>
+    <script type="module" src="./controller/index.js"></script>
+</body>
+
+</html>

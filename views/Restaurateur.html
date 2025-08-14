@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Restaurateur</title>
+    <link rel="stylesheet" href="/Styles/restaurateur.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="module" src="/controller/dashboard-restaurateur.js"></script>
+</head>
+
+<body>
+    <div class="dashboard-restaurateur">
+
+        <aside class="dashboard-aside">
+            <h1 class="logo">RestoEtudiant</h1>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#" id="nav-accueil" class="active"><span class="material-icons">home</span> Accueil</a>
+                    </li>
+                    <li><a href="#" id="nav-plats"><span class="material-icons">restaurant_menu</span> Plats</a></li>
+                    <li><a href="#" id="nav-profil"><span class="material-icons">account_circle</span>Profil</a></li>
+                    <li><a href="#" id="nav-formules"><span class="material-icons">category</span>Formules</a></li>
+                    <li><a href="/php/logout.php" id="nav-deconnexion"><span class="material-icons">logout</span> Déconnexion</a></li>
+                    
+
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="dashboard-main">
+
+            <!-- Section Accueil -->
+            <section id="section-accueil" class="dashboard-section section-visible">
+                <h2>Bienvenue dans votre espace Restaurateur</h2>
+                <p>Utilisez le menu pour ajouter vos plats, consulter votre profil ou vous déconnecter.</p>
+
+                <div class="dashboard-cards">
+                    <div class="card plats" id="card-plats">
+                        <span class="material-icons">restaurant_menu</span>
+                        <h3>Plats enregistrés</h3>
+                        <p id="stat-plats">0</p>
+                    </div>
+                    <div class="card commandes" id="card-commandes">
+                        <span class="material-icons">shopping_cart</span>
+                        <h3>Commandes</h3>
+                        <p id="stat-commandes">0</p>
+                    </div>
+                    <div class="card">
+                        <span class="material-icons">check_circle</span>
+                        <h3>Plats vendus</h3>
+                        <p id="stat-commandes-vendus">0</p>
+                    </div>
+                    <div class="card" id="card-prefere">
+                        <span class="material-icons">favorite</span>
+                        <h3>Plat préféré</h3>
+                        <p id="stat-plat-prefere">-</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Plats -->
+            <section id="section-plats" class="dashboard-section section-hidden">
+                <h2>Gérer vos Plats</h2>
+
+                <form id="form-ajout-plats">
+                    <div class="form-elt">
+                        <label for="nom-plat">Nom du Plat :</label>
+                        <input type="text" name="nom-plat" id="nom-plat" required placeholder="Nom du Plat">
+                    </div>
+                    <div class="form-elt">
+                        <label for="prix-plat">Prix :</label>
+                        <input type="number" name="prix-plat" id="prix-plat" required placeholder="Prix ($)"
+                            step=" 0.01" min="0">
+                    </div>
+                    <div class="form-elt">
+                        <label for="description-plat">Description :</label>
+                        <input type="text" name="description-plat" id="description-plat"
+                            placeholder="Description du Plat" required minlength="10" maxlength="500"
+                            style="height: 80px;">
+                    </div>
+                    <div class="form-elt">
+                        <label for="image-plat">Image :</label>
+
+                        <div class="custom-file-upload">
+                            <label for="image-plat" class="file-label">Choisir une image</label>
+                            <span id="nom-fichier">Aucun fichier choisi</span>
+                            <input type="file" id="image-plat" accept="image/*" required>
+                        </div>
+                        <div id="aperçu-image" class="aperçu-image">
+                            <!-- L'image sélectionnée s'affichera ici -->
+                        </div>
+
+                    </div>
+
+                    <button type="submit">Ajouter le Plat</button>
+                    <button type="button" id="btn-annuler" style="display: none;">Annuler la modification</button>
+
+                </form>
+
+                <div id="message-succes"
+                    style="display: none; margin-top: 15px; text-align: center; font-weight: bold; color: green;">
+                    Plat ajouté avec succès !
+                </div>
+
+
+                <h3>Vos plats enregistres</h3>
+                <div id="liste-plats">
+                    <!-- Liste des plats sera remplie dynamiquement avec JS -->
+                </div>
+
+            </section>
+            <section id="section-formules" class="dashboard-section section-hidden">
+                <h2>Créer vos formules</h2>
+                <p>Créer des formules attrayantes pour vos clients</p>
+            
+                <form class="form-ajout-formule">
+                    <div class="form-elt">
+                        <label for="nom-formule">Nom de la formule:</label>
+                        <select name="nom-formule" id="nom-formule" required>
+                            <option value="" disabled selected>--Choisir une formule--</option>
+                            <option value="Flex7 1">Flex7 1</option>
+                            <option value="Flex7 2">Flex7 2</option>
+                            <option value="Flex14">Flex14</option>
+                            <option value="Flex30">Flex30</option>
+                        </select>
+                    </div>
+            
+                    <div class="form-elt">
+                        <label for="prix-formule">Prix de la formule:</label>
+                        <input type="number" name="prix-formule" id="prix-formule" required placeholder="Prix ($)" step="0.01"
+                            min="0">
+                    </div>
+            
+                    <div class="form-elt">
+                        <label for="liste-des-plats">Sélectionner les plats :</label>
+                        <div id="liste-des-plats" class="checkbox-container">
+                            <!-- Liste des plats remplie dynamiquement -->
+                        </div>
+                    </div>
+            
+                    <div class="form-elt">
+                        <label for="description-formule">Description de la formule:</label>
+                        <input type="text" name="description-formule" id="description-formule"
+                            placeholder="Description de la formule" required minlength="10" maxlength="500" style="height: 80px;">
+                    </div>
+            
+                    <div class="form-elt">
+                        <label for="image-formule">Image de la formule:</label>
+                        <div class="custom-file-upload">
+                            <span class="file-label">Choisir une image</span>
+                            <span id="nom-fichier-formule">Aucun fichier choisi</span>
+                            <input type="file" id="image-formule" accept="image/*" required>
+                        </div>
+                    </div>
+            
+                    <button type="submit">Ajouter la formule</button>
+                    <button type="button" id="btn-annuler-formule" style="display: none;">Annuler la modification</button>
+                </form>
+            
+                <h3>Formules enregistrées</h3>
+                <div id="liste-formules">
+                    <!-- Liste remplie dynamiquement -->
+                </div>
+            </section>
+
+
+            <section id="section-profil" class="dashboard-section section-hidden">
+                <h2>Mon profil</h2>
+                <div id="profil-restaurateur">
+                    <!-- Informations du restaurateur chargées ici dynamiquement -->
+                </div>
+            </section>
+            
+        </main>
+    </div>
+</body>
+
+</html>

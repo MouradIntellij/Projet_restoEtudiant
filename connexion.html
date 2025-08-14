@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - RestoEtudiant</title>
+    <link rel="stylesheet" href="./Styles/connexion.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+<main class="login-section">
+    <h2 id="form-title">Connexion Étudiants</h2>
+    <p class="msg" id="welcome-msg"><strong>Bienvenue sur RestoEtudiant</strong></p>
+
+    <!-- Onglets -->
+    <div class="tabs">
+        <button class="tab active" id="etudiants-tab">Étudiants</button>
+        <button class="tab" id="restaurateurs-tab">Restaurateurs</button>
+    </div>
+
+    <!-- Formulaire -->
+    <form method="POST" action="/Projet_restoEtudiant/php/traitement_connexion.php" class="login-form" id="login-form">
+        <input type="hidden" name="role" id="role" value="etudiant">
+
+        <div class="form-elt">
+            <label for="email" id="email-label">Email Étudiant :</label>
+            <input type="email" name="email" id="email" required placeholder="etudiant@exemple.com">
+        </div>
+
+        <div class="form-elt">
+            <label for="password" id="password-label">Mot de passe :</label>
+            <div class="passwd-wrap">
+                <input type="password" name="password" id="password" required placeholder="Votre mot de passe">
+                <span id="togglePassword" class="material-icons toggle-password" style="cursor:pointer;">visibility</span>
+            </div>
+        </div>
+
+        <div class="form-elt checkbox-elt" id="remember-me-elt">
+            <input type="checkbox" id="remember-me" name="remember-me">
+            <label for="remember-me">Se souvenir de moi</label>
+        </div>
+
+        <div class="btn-container">
+            <button type="submit" id="btn-connexion" class="btn-connexion">
+                <span class="material-icons">login</span>
+                Connexion
+            </button>
+        </div>
+
+        <div class="form-links">
+            <a href="modedepasse-oublie.html">Mot de passe oublié ?</a>
+            <a href="Inscription.html">Première utilisation?</a>
+        </div>
+    </form>
+
+    <div class="form-bottom">
+        <a href="#">Découvrir le RestoEtudiant</a>
+    </div>
+
+    <div class="slogan">
+        <p><strong>Manger bien, Étudier mieux, dépensez moins,</strong> c'est simple et abordable</p>
+    </div>
+</main>
+
+<!-- Script -->
+<script type="module" src="./controller/connexion.js"></script>
+</body>
+
+</html>

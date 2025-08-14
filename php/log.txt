@@ -1,0 +1,2 @@
+Fichier traitement_connexion.php appelé
+Utilisateur trouvé et mot de passe correct ✅
