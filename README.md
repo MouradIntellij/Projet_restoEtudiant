@@ -146,9 +146,5 @@ Planned or future improvements:
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-In%20Development-yellow)
  
-
-
-markdown
-Copy code
 ![Repo Size](https://img.shields.io/github/repo-size/MouradIntellij/Projet_restoEtudiant)
 ![Last Commit](https://img.shields.io/github/last-commit/MouradIntellij/Projet_restoEtudiant)
