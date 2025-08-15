@@ -145,17 +145,8 @@ Planned or future improvements:
 ![MySQL](https://img.shields.io/badge/MySQL-Database-orange?logo=mysql)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-In%20Development-yellow)
-These badges represent:
+ 
 
-✅ The programming language used (PHP)
-
-✅ The database (MySQL)
-
-✅ The license (change "MIT" if needed)
-
-✅ The project status
-
-You can customize or add others such as:
 
 markdown
 Copy code
