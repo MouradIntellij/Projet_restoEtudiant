@@ -141,17 +141,6 @@ Planned or future improvements:
 - Fully responsive mobile design
 
 ---
-
-## 📷 Preview *(Optional)*
-
-> 📸 You can include screenshots or animated GIFs here to showcase the app's user interface and features.
-
----
-🏷️ GitHub Badges (Optional)
-You can add these at the very top of your README, right after the project title:
-
-markdown
-Copy code
 ![PHP](https://img.shields.io/badge/PHP-8.x-blue?logo=php)
 ![MySQL](https://img.shields.io/badge/MySQL-Database-orange?logo=mysql)
 ![License](https://img.shields.io/badge/License-MIT-green)
