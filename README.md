@@ -1,6 +1,6 @@
 🍽️ Projet RestoÉtudiant
 
-Projet développé par **Eric Beda** étudiant au **Collège LaSalle** et **moi même** . Il s'agit d'une application web **full stack** destinée à un restaurant orienté spécifiquement vers une clientèle étudiante.
+Projet développé par **Eric Beda** étudiant au **Collège LaSalle** et **moi même** comme soutien . Il s'agit d'une application web **full stack** destinée à un restaurant orienté spécifiquement vers une clientèle étudiante.
 
 ---
 
@@ -71,4 +71,104 @@ Fonctionnalités prévues ou envisagées pour les futures versions :
 
 ## 📷 Aperçu *(optionnel)*
 <img width="1839" height="968" alt="image" src="https://github.com/user-attachments/assets/9136bb47-e26a-44c8-833f-cdea17c57164" />
+🍽️ RestoStudent Project
 
+This project was developed by **Eric Beda**, a student at **LaSalle College** and myself as helper. It is a full-stack web application designed for a restaurant targeting specifically a student audience.
+
+---
+
+## 📑 Table of Contents
+
+- [🎯 Project Objective](#-project-objective)
+- [🧑‍💻 Main Features](#-main-features)
+  - [👨‍🎓 For Students](#-for-students)
+  - [👨‍🍳 For Restaurant Owners](#-for-restaurant-owners)
+- [🛠️ Technologies Used](#️-technologies-used)
+- [📌 Upcoming Features](#-upcoming-features)
+- [📷 Preview (Optional)](#-preview-optional)
+
+---
+
+## 🎯 Project Objective
+
+To develop an online ordering platform where:
+
+- **Students** can create an account, browse menus, place orders, and track delivery.
+- **Restaurant owners** can manage menus, received orders, and delivery logistics through an admin dashboard.
+
+The current focus is on **African cuisine**, but the platform is built to support multiple cuisines in the future.
+
+---
+
+## 🧑‍💻 Main Features
+
+### 👨‍🎓 For Students
+
+- User account creation and management
+- Secure login (session-based)
+- Browse menu items by cuisine
+- Place online orders
+- Track order status
+
+### 👨‍🍳 For Restaurant Owners
+
+- Secure admin dashboard
+- Add, update, and delete menu items
+- Manage incoming orders
+- Track deliveries
+
+---
+
+## 🛠️ Technologies Used
+
+| Category       | Technologies                                |
+|----------------|---------------------------------------------|
+| Frontend       | HTML, CSS *(planned: Bootstrap or Tailwind)*, JavaScript, AJAX |
+| Backend        | PHP (with PDO)                              |
+| Database       | MySQL                                       |
+| Auth & Sessions| PHP                                         |
+| Data Format    | JSON                                        |
+
+---
+
+## 📌 Upcoming Features
+
+Planned or future improvements:
+
+- Integration of payment gateways (e.g., PayPal, Stripe)
+- Dish rating system
+- Email or SMS notifications
+- Fully responsive mobile design
+
+---
+
+## 📷 Preview *(Optional)*
+
+> 📸 You can include screenshots or animated GIFs here to showcase the app's user interface and features.
+
+---
+🏷️ GitHub Badges (Optional)
+You can add these at the very top of your README, right after the project title:
+
+markdown
+Copy code
+![PHP](https://img.shields.io/badge/PHP-8.x-blue?logo=php)
+![MySQL](https://img.shields.io/badge/MySQL-Database-orange?logo=mysql)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-In%20Development-yellow)
+These badges represent:
+
+✅ The programming language used (PHP)
+
+✅ The database (MySQL)
+
+✅ The license (change "MIT" if needed)
+
+✅ The project status
+
+You can customize or add others such as:
+
+markdown
+Copy code
+![Repo Size](https://img.shields.io/github/repo-size/MouradIntellij/Projet_restoEtudiant)
+![Last Commit](https://img.shields.io/github/last-commit/MouradIntellij/Projet_restoEtudiant)
