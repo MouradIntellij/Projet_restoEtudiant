@@ -145,6 +145,5 @@ Planned or future improvements:
 ![MySQL](https://img.shields.io/badge/MySQL-Database-orange?logo=mysql)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-In%20Development-yellow)
- 
 ![Repo Size](https://img.shields.io/github/repo-size/MouradIntellij/Projet_restoEtudiant)
 ![Last Commit](https://img.shields.io/github/last-commit/MouradIntellij/Projet_restoEtudiant)
